@@ -1,0 +1,164 @@
+body {
+    font-family: "Arial", sans-serif;
+}
+
+/* Drop down button Css */
+        /* Dropdown container */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Button */
+        .dropbtn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            color: #333;
+        }
+
+        /* Change link color on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown content on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+/* Dropdown button CSS - End */
+
+/* Edit Word */
+
+
+    .mw-editsection-bracket,  #edit  {
+        font-size: 15px;
+        margin-right: 5px;
+    }
+
+
+    #History, #Description, #Accesibility, #Gallery {
+        font-size: 25px; /* Adjust the font size as needed */
+    }
+
+    #PandP {
+        display: grid;
+        background-color: #bbeb85;
+        text-align: center;
+        font-size: 25px; /* Adjust the font size as needed */
+    }
+
+    /* Title Burger Menu */
+
+    .menu-icon {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 6px 0;
+    }
+
+    .menu-container {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+    }
+
+    /* CSS for the menu items */
+
+
+    /* CSS from Group 3 Project */
+
+    .box1 {
+        display: grid;
+        grid-template-columns: 240px 240px 240px 240px;
+    }
+    .box1 img {
+        width: 200px;
+        height: 100px;
+        border: solid 1px;
+        padding: 15px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    div ul{
+        display: flex;
+    }
+    ul{
+        padding: 0;
+        margin: 5px;
+    }
+    a{
+        padding: 5px;
+        text-decoration: none;
+    }
+    .border{
+        border: 1px solid;
+    }
+    div ul li {
+        list-style-type: none;
+    }
+    div ul li a{
+        text-decoration: none;
+    }
+
+
+    /* Parks and Plazas Table  */
+
+    table {
+        border-collapse: collapse; /* Merge adjacent table borders into one */
+        width: 100%; /* Set table width to 100% of its container */
+      }
+    
+      /* CSS for table headers */
+      th {
+        border: 1px solid #ffffff; /* Add a 1px solid black border to table headers */
+        padding: 0px; /* Add padding for header content */
+        text-align: left; /* Align text to the left within headers */
+        background-color: #ffffff; /* Set a background color for headers */
+      }
+    
+      /* CSS for table data cells */
+      td {
+        border: 1px solid #ffffff; /* Add a 1px solid black border to table cells */
+        padding: 8px; /* Add padding for cell content */
+        text-align: left; /* Align text to the left within cells */
+      }
+    
+
+      #myTable {
+        display: none;
+      }
+    
+      .table-container {
+        position: relative;
+      }
+    
+      #showButton {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #f1f1f1;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
