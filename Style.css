@@ -91,14 +91,15 @@ body {
     .box1 {
         display: grid;
         grid-template-columns: 240px 240px 240px 240px;
+     
     }
     .box1 img {
         width: 200px;
         height: 100px;
         border: solid 1px;
         padding: 15px;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     div ul{
@@ -121,7 +122,8 @@ body {
     div ul li a{
         text-decoration: none;
     }
-
+    
+    
 
     /* Parks and Plazas Table  */
 
@@ -308,8 +310,8 @@ a {
 }
 
 .search-logo {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+   
     padding: 5px 10px 5px 5px;
 }
 
@@ -374,3 +376,10 @@ form button {
 }
 
 /* end of header and main part */
+
+/* Footer CSS */
+
+.footer-list {
+    display: flex;
+    color: #3366cc;
+}
