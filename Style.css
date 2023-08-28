@@ -162,3 +162,215 @@ body {
         padding: 5px 10px;
         cursor: pointer;
       }
+
+      /* header and main part */
+
+nav {
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav .account-login {
+    width: 100%;
+    text-align: right;
+}
+
+nav .account-login li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav .account-login li a {
+    text-decoration: none;
+}
+
+.fa-ellipsis {
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sub-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 1%;
+    background-color: #fff;
+    width: 170px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.1s;
+}
+
+.sub-menu-wrap.open-menu {
+    max-height: 400px;
+}
+
+.sub-menu {
+    padding: 5px 10px;
+    border: 1px #a2a9b1 solid;
+}
+
+div .user-info {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+div .user-info span {
+    display: block;
+}
+
+div .user-info span a {
+    text-decoration: none;
+    color: #3366cc;
+}
+
+a {
+    color: #3366cc;
+}
+
+.fa-bars {
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sub-menu-wrap-1 {
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    background-color: #fff;
+    width: 170px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.1s;
+}
+
+.sub-menu-wrap-1.open-menu-1 {
+    max-height: 550px;
+}
+
+.sub-menu-1 {
+    padding: 5px 10px;
+    border: 1px #a2a9b1 solid;
+}
+
+div .user-info-1 {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+div .user-info-1 span {
+    display: block;
+}
+
+div .user-info-1 span a {
+    text-decoration: none;
+    color: #3366cc;
+}
+
+a {
+    color: #3366cc;
+}
+
+.background {
+    border: 1px #000 solid;
+    padding: 5px;
+    background-color: #e4e4e4;
+}
+
+.wiki {
+    display: flex;
+}
+
+.wikipedia {
+    display: flex;
+    flex-direction: column;
+}
+
+.wiki-logo {
+    width: 40px;
+    height: 40px;
+    padding: 0 5px;
+}
+
+.wiki-wordmark,
+.wiki-tag {
+    width: 140px;
+    padding: 1px 0;
+}
+
+.search-logo {
+    width: 20px;
+    height: 20px;
+    padding: 5px 10px 5px 5px;
+}
+
+form {
+    background: #fff;
+    width: 2000px;
+    height: 32px;
+    display: flex;
+    border: #000 solid 1px;
+    border-radius: 3px;
+    align-self: center;
+    margin: 0 40px;
+}
+
+form input {
+    flex: 1;
+    border: none;
+}
+
+form button {
+    background: #fff;
+    padding: 5px 15px;
+    color: #000;
+    border-left: #000 solid 1px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* navbar */
+
+/* main */
+
+.ads {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    border: #339966 solid 1px;
+    padding: 5px;
+}
+
+.ads-wiki {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.wiki-earth,
+.wiki-upload {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.fa-regular {
+    font-size: small;
+    color: rgb(53, 53, 53);
+    cursor: pointer;
+}
+
+/* end of header and main part */
