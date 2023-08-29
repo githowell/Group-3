@@ -86,7 +86,7 @@ body {
     /* CSS for the menu items */
 
 
-    /* CSS from Group 3 Project */
+    /* CSS for gallery */
 
     .box1 {
         display: grid;
@@ -164,6 +164,7 @@ body {
         padding: 5px 10px;
         cursor: pointer;
       }
+
 
       /* header and main part */
 
@@ -383,3 +384,4 @@ form button {
     display: flex;
     color: #3366cc;
 }
+
