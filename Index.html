@@ -1,175 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="device: device-width initial-scale=1.0">
   <title>Main Content - Arroceros Urban Park</title>
   <!-- Bootstrap Link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- CSS Link -->
   <link rel="stylesheet" type="text/css" href="Style.css">
 
 </head>
+
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12" style="border: 1px solid red;"> Navbar
-        <!-- Navbar Start -->
+
+      <!-- Hero Start -->
 
 
-        <!-- Navbar End   -->
+     
+  <header class="hero">
+    <nav>
+      <i class="fa fa-bars" onclick="toggleMenuA()"></i>
+      <div class="sub-menu-wrap-1" id="subMenuA">
+        <div class="sub-menu-1">
+          <p class="user-info-1">
+            Main menu<span>[<a href="">move to sidebar</a>]</span>
+          </p>
+          <a href="#" class="user-info-1">Main page</a>
+          <a href="#" class="user-info-1">Contents</a>
+          <a href="#" class="user-info-1">Current events</a>
+          <a href="#" class="user-info-1">Random article</a>
+          <a href="#" class="user-info-1">About Wikipedia</a>
+          <a href="#" class="user-info-1">Contact us</a>
+          <a href="#" class="user-info-1">Donate</a>
+          <p class="user-info-1">Contribute</p>
+          <a href="#" class="user-info-1">Help</a>
+          <a href="#" class="user-info-1">Learn to edit</a>
+          <a href="#" class="user-info-1">Community portal</a>
+          <a href="#" class="user-info-1">Recent changes</a>
+          <a href="#" class="user-info-1">Upload file</a>
+          <p class="user-info-1">Language</p>
+          <p class="user-info-1 background">Language links are at the top of the page across from the title.</p>
+        </div>
       </div>
+
+      <div class="wiki">
+        <img class="wiki-logo" src="Images/wikipedia.png" alt="Wikipedia Logo">
+        <div class="wikipedia">
+          <img class="wiki-wordmark" src="../Images/SVG/Wikipedia Wordmark.svg" alt="Wikipedia Wordmark">
+          <img class="wiki-tag" src="../Images/SVG/wikipedia-tagline-en.svg" alt="Wikipedia tagline">
+        </div>
+      </div>
+      <form>
+        <img class="search-logo" src="Images/PNG/search.png" alt="Search Icon">
+        <input type="text" placeholder="Search Wikipedia">
+        <button>Search</button>
+
+      </form>
+
+      <ul class="account-login">
+        <li><a class="account" href="#">Create account</a></li>
+        <li><a class="log-in" href="#">Log in</a></li>
+      </ul>
+
+      <i class="fa fa-ellipsis" onclick="toggleMenu()"></i>
+      <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+          <p class="user-info">
+            Pages for logged out<span>editors <a href="#">(learn more)</a></span>
+          </p>
+          <a href="#" class="user-info">Contribution</a>
+          <a href="#" class="user-info">Talk</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+   <!-- Hero End   -->
+
+  <section class="ads-section">
+    <div class="ads">
+      <img src="Images/WLE Austria Logo local.webp" alt="WLE Austria Logo">
+      <div class="ads-wiki">
+        <a class="wiki-earth" href="">Wiki Loves Earth:</a>
+        <a class="wiki-upload" href="">Upload photo of natural heritage sites in the Philipines to help Wikipedia and
+          win
+          amazing prizes!</a>
+      </div>
+      <i class="fa-regular fa-circle-xmark"></i>
+    </div>
+  </section>
+
+  
+  <div class="container-fluid">
+
     </div>
     <div class="row">
-      <div class="col-12" style="border: 1px solid red;"> Main
+      <div class="col-12" style="border: 1px solid rgba(255, 0, 0, 0);"> 
         <!-- Main Content Start -->
 
 
         <div class="container">
-            <div class="row">
-                <div class="col-8" style="border: 1px solid red;"> 
-                    
-                    <h1 id="firstHeading" class="firstHeading mw-first-heading">
-                      <span class="mw-page-title-main">Arroceros Urban Forest Park</span></h1>
-            
+          <div class="row">
+            <div class="col-8" style="border: 1px solid rgba(255, 0, 0, 0);">
 
+              <h1 id="firstHeading" class="firstHeading mw-first-heading">
+                <span class="mw-page-title-main">Arroceros Urban Forest Park</span>
+              </h1>
+
+
+            </div>
+            <div class=" d-flex justify-content-end col-4" style="border: 1px solid rgba(255, 0, 0, 0);">
+
+              <div class="dropdown">
+                <button class="btn btn-light"><img src="Images/Add Languages.png" width=200px
+                    alt="add languages btn"></button>
+                <div class="dropdown-content">
+                  <a href="#">English</a>
+                  <a href="#">Spanish</a>
+                  <a href="#">French</a>
+                  <!-- Add more language options as needed -->
                 </div>
-                <div class=" d-flex justify-content-end col-4" style="border: 1px solid red;">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1222" style="border: 1px solid rgba(255, 0, 0, 0);">
+              <!-- Article Talk (Portion) -->
 
-                    <div class="dropdown">
-                        <button class="btn btn-light"><img src="Images/Add Languages.png" width=200px alt="add languages btn"></button>
-                        <div class="dropdown-content">
-                            <a href="#">English</a>
-                            <a href="#">Spanish</a>
-                            <a href="#">French</a>
-                            <!-- Add more language options as needed -->
-                        </div>
-                    </div>
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Article</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Talk</a>
+                    </li>
+                  </ul>
+
+                  <!-- right side inner bar -->
+                  <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Read</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Edit</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">View History</a>
+                    </li>
+
+                  </ul>
+
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Tools
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  </ul>
+
+
                 </div>
             </div>
-            <div class="row">
-                <div class="col-1222" style="border: 1px solid red;"> 
-                    <!-- Article Talk (Portion) -->
-
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <div class="container-fluid">
-                  
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Article</a>
-                              </li>
-                              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Talk</a>
-                              </li>
-                            </ul>
-
-                            <!-- right side inner bar -->
-                            <ul class="nav justify-content-end">
-                            <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Read</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Edit</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">View History</a>
-                            </li>
-                      
-                          </ul>
-                     
-                              
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                 Tools
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                              </li>
-                            </ul>
-                  
-                            
-                          </div>
-                        </div>
-                      </nav>
+            </nav>
 
 
-                    <!-- End of Article Talk (Portion) -->
+            <!-- End of Article Talk (Portion) -->
+          </div>
+          <div class="row">
+            <div class="col-8" style="border: 1px solid rgba(255, 0, 0, 0);">
+              <p style="font-size: small;">From Wikipedia, the free encyclopedia</p>
             </div>
-            <div class="row">
-                <div class="col-8" style="border: 1px solid red;"> <p style="font-size: small;">From Wikipedia, the free encyclopedia</p>
-                </div>
-                <div class="col-4" style="border: 1px solid red;"> 
-                    <p  style="font-size: small;"><a href="#">Coordinates: &nbsp; &nbsp; &nbsp; &nbsp;14°35′39″N 120°58′55″E</h></p>
-                </div>
+            <div class="col-4" style="border: 1px solid rgba(255, 0, 0, 0);">
+              <p style="font-size: small;"><a href="#">Coordinates: &nbsp; &nbsp; &nbsp; &nbsp;14°35′39″N 120°58′55″E
+                  </h>
+              </p>
             </div>
-            <div class="row">
-                <div class="col-12" style="border: 1px solid red;"> 
-                    <div class="Article">
-                   
-                        <img src="Images/Arroceros Forest Park panel.png" class="col-md-3 float-md-end mb-3 ms-md-3"  alt="Arroceros Forest Park Image"> <br>
-                        
-                        <!-- Article 1st Paragraph -->
-                        
-                        <p> The <b>Arroceros Forest Park</b> is a riverside<a href="#" title="Urban forest">urban forest</a> park in <a href="#" title="Manila">Manila</a>, <a href="/wiki/Philippines" title="Philippines">Philippines</a>, located on Antonio Villegas Street (former Calle Arroceros) in the central district of <a href="/wiki/Ermita" title="Ermita">Ermita</a>. 
-                        </p>
-                        
-                        <p>Developed in 1993, the 2.2-hectare (5.4-acre) park on the south bank of the <a href="/wiki/Pasig_River" title="Pasig River">Pasig River</a>, at the foot of <a href="/wiki/Quezon_Bridge" title="Quezon Bridge">Quezon Bridge</a>, consists of <a href="/wiki/Secondary_growth_forest" class="mw-redirect" title="Secondary growth forest">secondary growth forest</a> with 61 different tree varieties and 8,000 <a href="/wiki/Ornamental_plant" title="Ornamental plant">ornamental plants</a> providing a habitat for 10 different bird species.<sup id="cite_ref-phil_1-0" class="reference"><a href="#cite_note-phil-1">&#91;1&#93;</a></sup> Despite its small size, it is considered an important feature of the city in providing fresh air to the Lawton area, which is traversed by many commuters from other cities in the region.<sup id="cite_ref-:0_2-0" class="reference"><a href="#cite_note-:0-2">&#91;2&#93;</a></sup> It lies in a historic area of Manila and has been called "Manila's last lung", being the city's only <a href="/wiki/Nature_park" title="Nature park">nature park</a>.<sup id="cite_ref-star_3-0" class="reference"><a href="#cite_note-star-3">&#91;3&#93;</a></sup> The park is administered by the City Government of Manila in partnership with private environmental group, Winner Foundation.
-                        </p>
-                        
+          </div>
+          <div class="row">
+            <div class="col-12" style="border: 1px solid rgba(255, 0, 0, 0);">
+              <div class="Article">
 
-                        <h2><span class="mw-headline" id="History">History</span>
-                        <span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Arroceros_Urban_Forest_Park&amp;action=edit&amp;section=1" title="Edit section: History" id="edit">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-                        <hr>
+                <img src="Images/Arroceros Forest Park panel.png" class="col-md-3 float-md-end mb-3 ms-md-3"
+                  alt="Arroceros Forest Park Image"> <br>
 
-                         <!-- History 1st Paragraph -->
-                        
-                         <p>The area occupied by the Arroceros Forest Park used to be part of <a href="/wiki/Pari%C3%A1n_(Manila)" title="Parián (Manila)">Parián</a>, the Chinese trading settlement during the early <a href="/wiki/History_of_the_Philippines_(1521-1898)" class="mw-redirect" title="History of the Philippines (1521-1898)">Spanish colonial period</a>. In the 19th century, it was the site of the <i>Fabrica de Arroceros</i>, a tobacco factory owned and operated by the <a href="/wiki/Compa%C3%B1%C3%ADa_General_de_Tabacos_de_Filipinas" title="Compañía General de Tabacos de Filipinas">Compañía General de Tabacos de Filipinas</a>. During the <a href="/wiki/History_of_the_Philippines_(1898-1946)" class="mw-redirect" title="History of the Philippines (1898-1946)">American period</a>, it was used as a military garrison which housed the <a href="/wiki/Signal_Corps_(United_States_Army)" class="mw-redirect" title="Signal Corps (United States Army)">Signal Corps</a> at the <i>Cuartel de Infantería</i> and the
-                            <a href="/wiki/Surgeon_General_of_the_United_States_Army" title="Surgeon General of the United States Army">Surgeon General</a>'s office at the <i>Estado Mayor</i>. When the Philippines gained independence after <a href="/wiki/World_War_II" title="World War II">World War II</a>, the barracks were converted into the headquarters of the <a href="/wiki/Department_of_Education_(Philippines)" title="Department of Education (Philippines)">Department of Education</a>.<sup id="cite_ref-star_3-1" class="reference"><a href="#cite_note-star-3">&#91;3&#93;</a></sup>
-                            </p><p>The park was established in 1993 after the government's education department offices were transferred to its present location in <a href="/wiki/Pasig" title="Pasig">Pasig</a>. Through a memorandum of agreement signed between the City of Manila and Winner Foundation supported by then First Lady <a href="/wiki/Amelita_Ramos" title="Amelita Ramos">Amelita Ramos</a>, the city agreed to lease the site for development as a nature park by the private environmental group. With an initial 150 century-old trees that survived the war, the park now hosts over 3,000 trees through reforestation efforts spearheaded by the Manila Seedling Bank.<sup id="cite_ref-star_3-2" class="reference"><a href="#cite_note-star-3">&#91;3&#93;</a></sup><sup id="cite_ref-phil_1-1" class="reference"><a href="#cite_note-phil-1">&#91;1&#93;</a></sup>
-                            </p><p>The park became the subject of controversy in 2003, when then mayor <a href="/wiki/Lito_Atienza" title="Lito Atienza">Lito Atienza</a> ordered its closure to give way to the construction of a school administration building and teachers' dormitory on a portion of the park despite protests from conservation groups. The groups claimed that of the 8,000 trees in the park in 2000, only 2,000 remained when the buildings were completed. The park was reopened in 2007.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>
-                            </p><p>However, the memorandum of agreement signed earlier in the 1990s had expired a year later in 2008, leaving the park vulnerable to any future threats to its existence. A few years later, the park was threatened once again, when in July 2017, the Winner Foundation received an order from the Manila city government to vacate the park so that the city could build a gymnasium inside. This prompts the Winner Foundation and its partner groups to launch a signature campaign opposing the construction of the gym.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> An online Change.org petition made by a partner group urging the Senate Committee on Climate Change reached 115,000 signatures.<sup id="cite_ref-:0_2-1" class="reference"><a href="#cite_note-:0-2">&#91;2&#93;</a></sup> The construction of the gym was eventually deferred by former mayor President <a href="/wiki/Joseph_Estrada" title="Joseph Estrada">Joseph Estrada</a>.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>
-                            </p>
-                            <!-- Side Image 2 -->
-                            <img src="Images/Arroceros Forest Park panel2.png" width=100px  class="col-md-2 float-md-end mb-3 ms-md-3"  alt="Arroceros Forest Park Image"> <br>
-                            
-                            
-                            <p>Upon winning the mayoral election, <a href="/wiki/Isko_Moreno" title="Isko Moreno">Isko Moreno</a> said he would not allow any construction from occurring in Arroceros Forest Park, vowing to block the impending construction of the gym made by the previous city administration.<sup id="cite_ref-:0_2-2" class="reference"><a href="#cite_note-:0-2">&#91;2&#93;</a></sup>
-                            </p>
-                            
-                            
-                            
-                            
-                            
-                            <p>On February 27, 2020, Mayor Isko Moreno signed City Ordinance No. 8607, or the Arroceros Forest Park Ordinance, designating the Arroceros Forest Park as a permanent forest park instead of as ordinary city property. Under this ordinance, cutting of trees, dumping of waste, and excavation is prohibited within the area. Alongside the ordinance, the mayor also revealed plans to allocate P1 million for the park's operations, to appoint "peace officers" to help in taking care of the park, and to expand the forest park as the highlight of a future green city in the Lawton area.<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
-                            </p><p>The park was formally reopened in February 2022 as the Arroceros Urban Forest Park after a redevelopment. The park which was 2.51 hectares was expanded by 5 hectares.<sup id="cite_ref-8" class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup>
-                            </p>
+                <!-- Article 1st Paragraph -->
 
-                            <h2><span class="mw-headline" id="Description">Description</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Arroceros_Urban_Forest_Park&amp;action=edit&amp;section=1" title="Edit section: History" id="edit">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-                            <hr>
+                <p> The <b>Arroceros Forest Park</b> is a riverside<a href="#" title="Urban forest">urban forest</a>
+                  park in <a href="#" title="Manila">Manila</a>, <a href="/wiki/Philippines"
+                    title="Philippines">Philippines</a>, located on Antonio Villegas Street (former Calle Arroceros) in
+                  the central district of <a href="/wiki/Ermita" title="Ermita">Ermita</a>.
+                </p>
 
-                            <!-- Side Image 3 -->
-                            <img src="Images/Arroceros Forest Park panel3.png" class="col-md-3 float-md-end mb-3 ms-md-3"  alt="Arroceros Forest Park Image"> <br>
-                        
-                            <p>
-                                The Arroceros Forest Park, designed by landscape architect Wilfrido Dizon and the Bulacan Garden Corporation, is home to over 3,500 trees of diverse variety, such as <span><a href="#">acacia mangium</a></span>, <a href="#">acacia auriculiformis</a></span>, <a href="#">African tulip tree</a></span>, <a href="#">agoho</a></span>, <a href="#">anahaw</a></span>, <a href="#">banyan</a></span>, <a href="#">bunga de china</a></span>, <a href="#">dapdap</a></span>, <a href="#">eucalyptus</a></span>, <a href="#">ficus benjamina</a></span>, <span><a href="#">fire tree</a></span>, <span><a href="#">indian tree</a></span>, <span><a href="#">kamagong</a></span>, <span><a href="#">mahogany</a></span>, <span><a href="#"> MacArthur palm</a></span>, <span><a href="#">molave</a></span>, <span><a href="#">narra</a></span>, <span><a href="#">neem</a></span>, <span><a href="#">rain tree</a></span>, <span><a href="#">rattan</a></span>, <span><a href="#">rubber tree</a></span>, <span><a href="#">talisay</a></span>, <span><a href="#">teak</a></span>, <span><a href="#">tiesa</a></span> and <span><a href="#">yucca</a></span>. It is also inhabited by different fruit trees, including <span><a href="#">aratilis</a></span>, <span><a href="#">avocado</a></span>, banana, <span><a href="#">caimito</a></span>, coconut, <span><a href="#">guava</a></span>, <span><a href="#">macopa</a></span>, mango, <span><a href="#">santol</a></span>, as well as ornamental plants like <span><a href="#">calachuci</a></span>, <span><a href="#">gardenia</a></span>,  <span><a href="#">golden shower</a></span>, <span><a href="#">palomaria</a></span> and <span><a href="#">ylang-ylang</a></span>.[9] The park has tiled pathways and concrete roads giving access to areas around the park. It also contains a fish pond and bridge, as well as a riverside walk. The park is a habitat of different bird species, such as the <span><a href="#">long-tailed shrike</a></span>, <span><a href="#">pied fantail</a></span>, <span><a href="#">zebra dove</a></span>, <span><a href="#">Pacific swallow</a></span>, <span><a href="#">yellow-vented bulbul</a></span> and <span><a href="#">brown shrike</a></span>.[9]
-                            </p>
-                            <p>
-                                It also houses the Manila Education Center, the central offices for the <span><a href="#">Division of City Schools</a></span> located at its southern edge.
-                            </p>
+                <p>Developed in 1993, the 2.2-hectare (5.4-acre) park on the south bank of the <a
+                    href="/wiki/Pasig_River" title="Pasig River">Pasig River</a>, at the foot of <a
+                    href="/wiki/Quezon_Bridge" title="Quezon Bridge">Quezon Bridge</a>, consists of <a
+                    href="/wiki/Secondary_growth_forest" class="mw-redirect" title="Secondary growth forest">secondary
+                    growth forest</a> with 61 different tree varieties and 8,000 <a href="/wiki/Ornamental_plant"
+                    title="Ornamental plant">ornamental plants</a> providing a habitat for 10 different bird
+                  species.<sup id="cite_ref-phil_1-0" class="reference"><a
+                      href="#cite_note-phil-1">&#91;1&#93;</a></sup> Despite its small size, it is considered an
+                  important feature of the city in providing fresh air to the Lawton area, which is traversed by many
+                  commuters from other cities in the region.<sup id="cite_ref-:0_2-0" class="reference"><a
+                      href="#cite_note-:0-2">&#91;2&#93;</a></sup> It lies in a historic area of Manila and has been
+                  called "Manila's last lung", being the city's only <a href="/wiki/Nature_park"
+                    title="Nature park">nature park</a>.<sup id="cite_ref-star_3-0" class="reference"><a
+                      href="#cite_note-star-3">&#91;3&#93;</a></sup> The park is administered by the City Government of
+                  Manila in partnership with private environmental group, Winner Foundation.
+                </p>
 
-                            <h2><span class="mw-headline" id="Accessibility">Accesibility</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="#" title="Edit section: History"id="edit">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-                            <hr>
 
-                            <p>
-                                The park is located in the center of Manila, just north of the <span><a href="#">Manila City Hall</a></span> adjacent to the walled district of Intramuros. It is within walking distance from the <span><a href="#">LRT Line 1 Central Terminal station </a></span>and is right across from the <span><a href="#">Manila Metropolitan Theater</a></span>. It is accessible from Rizal Park and southern Manila via <span><a href="#">Padre Burgos Avenue </a></span> Padre Burgos Avenue, and from northern Manila via <span><a href="#">Quezon Boulevard</a></span> and <span><a href="#">Quezon Bridge</a></span>. It is also near the Lawton Bus Terminal and the <span><a href="#">Pasig River Ferry</a></span> Lawton Station.</p>
-                            </p>
-    
+                <h2><span class="mw-headline" id="History">History</span>
+                  <span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a
+                      href="/w/index.php?title=Arroceros_Urban_Forest_Park&amp;action=edit&amp;section=1"
+                      title="Edit section: History" id="edit">edit</a><span
+                      class="mw-editsection-bracket">]</span></span>
+                </h2>
+                <hr>
 
-                      </div>
+                <!-- History 1st Paragraph -->
+
+                <p>The area occupied by the Arroceros Forest Park used to be part of <a
+                    href="/wiki/Pari%C3%A1n_(Manila)" title="Parián (Manila)">Parián</a>, the Chinese trading settlement
+                  during the early <a href="/wiki/History_of_the_Philippines_(1521-1898)" class="mw-redirect"
+                    title="History of the Philippines (1521-1898)">Spanish colonial period</a>. In the 19th century, it
+                  was the site of the <i>Fabrica de Arroceros</i>, a tobacco factory owned and operated by the <a
+                    href="/wiki/Compa%C3%B1%C3%ADa_General_de_Tabacos_de_Filipinas"
+                    title="Compañía General de Tabacos de Filipinas">Compañía General de Tabacos de Filipinas</a>.
+                  During the <a href="/wiki/History_of_the_Philippines_(1898-1946)" class="mw-redirect"
+                    title="History of the Philippines (1898-1946)">American period</a>, it was used as a military
+                  garrison which housed the <a href="/wiki/Signal_Corps_(United_States_Army)" class="mw-redirect"
+                    title="Signal Corps (United States Army)">Signal Corps</a> at the <i>Cuartel de Infantería</i> and
+                  the
+                  <a href="/wiki/Surgeon_General_of_the_United_States_Army"
+                    title="Surgeon General of the United States Army">Surgeon General</a>'s office at the <i>Estado
+                    Mayor</i>. When the Philippines gained independence after <a href="/wiki/World_War_II"
+                    title="World War II">World War II</a>, the barracks were converted into the headquarters of the <a
+                    href="/wiki/Department_of_Education_(Philippines)"
+                    title="Department of Education (Philippines)">Department of Education</a>.<sup
+                    id="cite_ref-star_3-1" class="reference"><a href="#cite_note-star-3">&#91;3&#93;</a></sup>
+                </p>
+                <p>The park was established in 1993 after the government's education department offices were transferred
+                  to its present location in <a href="/wiki/Pasig" title="Pasig">Pasig</a>. Through a memorandum of
+                  agreement signed between the City of Manila and Winner Foundation supported by then First Lady <a
+                    href="/wiki/Amelita_Ramos" title="Amelita Ramos">Amelita Ramos</a>, the city agreed to lease the
+                  site for development as a nature park by the private environmental group. With an initial 150
+                  century-old trees that survived the war, the park now hosts over 3,000 trees through reforestation
+                  efforts spearheaded by the Manila Seedling Bank.<sup id="cite_ref-star_3-2" class="reference"><a
+                      href="#cite_note-star-3">&#91;3&#93;</a></sup><sup id="cite_ref-phil_1-1" class="reference"><a
+                      href="#cite_note-phil-1">&#91;1&#93;</a></sup>
+                </p>
+                <p>The park became the subject of controversy in 2003, when then mayor <a href="/wiki/Lito_Atienza"
+                    title="Lito Atienza">Lito Atienza</a> ordered its closure to give way to the construction of a
+                  school administration building and teachers' dormitory on a portion of the park despite protests from
+                  conservation groups. The groups claimed that of the 8,000 trees in the park in 2000, only 2,000
+                  remained when the buildings were completed. The park was reopened in 2007.<sup id="cite_ref-4"
+                    class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>
+                </p>
+                <p>However, the memorandum of agreement signed earlier in the 1990s had expired a year later in 2008,
+                  leaving the park vulnerable to any future threats to its existence. A few years later, the park was
+                  threatened once again, when in July 2017, the Winner Foundation received an order from the Manila city
+                  government to vacate the park so that the city could build a gymnasium inside. This prompts the Winner
+                  Foundation and its partner groups to launch a signature campaign opposing the construction of the
+                  gym.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> An online
+                  Change.org petition made by a partner group urging the Senate Committee on Climate Change reached
+                  115,000 signatures.<sup id="cite_ref-:0_2-1" class="reference"><a
+                      href="#cite_note-:0-2">&#91;2&#93;</a></sup> The construction of the gym was eventually deferred
+                  by former mayor President <a href="/wiki/Joseph_Estrada" title="Joseph Estrada">Joseph
+                    Estrada</a>.<sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>
+                </p>
+                <!-- Side Image 2 -->
+                <img src="Images/Arroceros Forest Park panel2.png" width=100px
+                  class="col-md-2 float-md-end mb-3 ms-md-3" alt="Arroceros Forest Park Image"> <br>
+
+
+                <p>Upon winning the mayoral election, <a href="/wiki/Isko_Moreno" title="Isko Moreno">Isko Moreno</a>
+                  said he would not allow any construction from occurring in Arroceros Forest Park, vowing to block the
+                  impending construction of the gym made by the previous city administration.<sup id="cite_ref-:0_2-2"
+                    class="reference"><a href="#cite_note-:0-2">&#91;2&#93;</a></sup>
+                </p>
+
+
+
+
+
+                <p>On February 27, 2020, Mayor Isko Moreno signed City Ordinance No. 8607, or the Arroceros Forest Park
+                  Ordinance, designating the Arroceros Forest Park as a permanent forest park instead of as ordinary
+                  city property. Under this ordinance, cutting of trees, dumping of waste, and excavation is prohibited
+                  within the area. Alongside the ordinance, the mayor also revealed plans to allocate P1 million for the
+                  park's operations, to appoint "peace officers" to help in taking care of the park, and to expand the
+                  forest park as the highlight of a future green city in the Lawton area.<sup id="cite_ref-7"
+                    class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+                </p>
+                <p>The park was formally reopened in February 2022 as the Arroceros Urban Forest Park after a
+                  redevelopment. The park which was 2.51 hectares was expanded by 5 hectares.<sup id="cite_ref-8"
+                    class="reference"><a href="#cite_note-8">&#91;8&#93;</a></sup>
+                </p>
+
+                <h2><span class="mw-headline" id="Description">Description</span><span class="mw-editsection"><span
+                      class="mw-editsection-bracket">[</span><a
+                      href="/w/index.php?title=Arroceros_Urban_Forest_Park&amp;action=edit&amp;section=1"
+                      title="Edit section: History" id="edit">edit</a><span
+                      class="mw-editsection-bracket">]</span></span></h2>
+                <hr>
+
+                <!-- Side Image 3 -->
+                <img src="Images/Arroceros Forest Park panel3.png" class="col-md-3 float-md-end mb-3 ms-md-3"
+                  alt="Arroceros Forest Park Image"> <br>
+
+                <p>
+                  The Arroceros Forest Park, designed by landscape architect Wilfrido Dizon and the Bulacan Garden
+                  Corporation, is home to over 3,500 trees of diverse variety, such as <span><a href="#">acacia
+                      mangium</a></span>, <a href="#">acacia auriculiformis</a></span>, <a href="#">African tulip
+                    tree</a></span>, <a href="#">agoho</a></span>, <a href="#">anahaw</a></span>, <a
+                    href="#">banyan</a></span>, <a href="#">bunga de china</a></span>, <a href="#">dapdap</a></span>, <a
+                    href="#">eucalyptus</a></span>, <a href="#">ficus benjamina</a></span>, <span><a href="#">fire
+                      tree</a></span>, <span><a href="#">indian tree</a></span>, <span><a href="#">kamagong</a></span>,
+                  <span><a href="#">mahogany</a></span>, <span><a href="#"> MacArthur palm</a></span>, <span><a
+                      href="#">molave</a></span>, <span><a href="#">narra</a></span>, <span><a href="#">neem</a></span>,
+                  <span><a href="#">rain tree</a></span>, <span><a href="#">rattan</a></span>, <span><a href="#">rubber
+                      tree</a></span>, <span><a href="#">talisay</a></span>, <span><a href="#">teak</a></span>, <span><a
+                      href="#">tiesa</a></span> and <span><a href="#">yucca</a></span>. It is also inhabited by
+                  different fruit trees, including <span><a href="#">aratilis</a></span>, <span><a
+                      href="#">avocado</a></span>, banana, <span><a href="#">caimito</a></span>, coconut, <span><a
+                      href="#">guava</a></span>, <span><a href="#">macopa</a></span>, mango, <span><a
+                      href="#">santol</a></span>, as well as ornamental plants like <span><a
+                      href="#">calachuci</a></span>, <span><a href="#">gardenia</a></span>, <span><a href="#">golden
+                      shower</a></span>, <span><a href="#">palomaria</a></span> and <span><a
+                      href="#">ylang-ylang</a></span>.[9] The park has tiled pathways and concrete roads giving access
+                  to areas around the park. It also contains a fish pond and bridge, as well as a riverside walk. The
+                  park is a habitat of different bird species, such as the <span><a href="#">long-tailed
+                      shrike</a></span>, <span><a href="#">pied fantail</a></span>, <span><a href="#">zebra
+                      dove</a></span>, <span><a href="#">Pacific swallow</a></span>, <span><a href="#">yellow-vented
+                      bulbul</a></span> and <span><a href="#">brown shrike</a></span>.[9]
+                </p>
+                <p>
+                  It also houses the Manila Education Center, the central offices for the <span><a href="#">Division of
+                      City Schools</a></span> located at its southern edge.
+                </p>
+
+                <h2><span class="mw-headline" id="Accessibility">Accesibility</span><span class="mw-editsection"><span
+                      class="mw-editsection-bracket">[</span><a href="#" title="Edit section: History"
+                      id="edit">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+                <hr>
+
+                <p>
+                  The park is located in the center of Manila, just north of the <span><a href="#">Manila City
+                      Hall</a></span> adjacent to the walled district of Intramuros. It is within walking distance from
+                  the <span><a href="#">LRT Line 1 Central Terminal station </a></span>and is right across from the
+                  <span><a href="#">Manila Metropolitan Theater</a></span>. It is accessible from Rizal Park and
+                  southern Manila via <span><a href="#">Padre Burgos Avenue </a></span> Padre Burgos Avenue, and from
+                  northern Manila via <span><a href="#">Quezon Boulevard</a></span> and <span><a href="#">Quezon
+                      Bridge</a></span>. It is also near the Lawton Bus Terminal and the <span><a href="#">Pasig River
+                      Ferry</a></span> Lawton Station.
+                </p>
+                </p>
+
+
+              </div>
+            </div>
+
+
+          </div>
+          <div class="row">
+            <div class="col-12" style="border: 1px solid rgba(255, 0, 0, 0);">
+
+              <h2><span class="mw-headline" id="Gallery">Gallery</span><span class="mw-editsection"><span
+                    class="mw-editsection-bracket">[</span><a
+                    href="/w/index.php?title=Arroceros_Urban_Forest_Park&amp;action=edit&amp;section=1"
+                    title="Edit section: History" id="edit">edit</a><span class="mw-editsection-bracket">]</span></span>
+              </h2>
+
+              <div class="box1">
+                <div>
+                  <img src="Images/1.jpg" alt="park">
+                  <p>The welcome sign to the park at the pedestrianized plaza outside the park.</p>
                 </div>
-
+                <div>
+                  <img src="Images/2.jpg" alt="">
+                  <p>A winding paved pathway inside the forest park.</p>
+                </div>
+                <div>
+                  <img src="Images/3.jpg" alt="">
+                  <p>A series of paved paths with a large open plaza.</p>
+                </div>
       
             </div>
             <div class="row">
@@ -202,148 +431,186 @@
                             <img src="Images/6.jpg" alt="">
                             <p>An esplanade along the Pasig River located at one end of the forest park.</p>
                         </div>
-                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, nulla exercitationem tempora inventore ratione ad. Nobis, mollitia? Eum iure asperiores maiores, fuga unde cum voluptatibus ad voluptatem veritatis error vero.</div>
+ 
                     </div>
             
-                </div>
-                <div class="col-12" style="border: 1px solid red;">
-
-                    <h2><span class="mw-headline" id="Gallery">Reference</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="#" title="Edit section: History"id="edit">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
-
-                    <section class="references">
-
-                          <hr>
-                              <li><sup><a href="">^</a></sup><sup><a href="">a</a></sup><sup><a href="">b</a></sup><a href="">"Arroceros forest park should be preserved"</a>. <i>The Philippine Star</i>. Retrieved June 10, 2015.
-                              </li>
-                              <li><sup><a href="">^</a></sup><sup><a href="">a</a></sup><sup><a href="">b</a></sup><sup><a href="">c</a></sup>Talabong, Rambo. <a href="">"Isko Moreno: No to building of gym in Arroceros Forest Park"</a>. <i>Rappler</i>. Retrieved March 3, 2020.
-                              </li>
-                              <li><sup><a href="">^</a></sup><a href="">"The Arroceros Forest Park: Manila's last lung"</a>. <i>The Philippine Sta</i>. Retrieved June 10, 2015.
-                              </li>
-                              <li><sup><a href="">^</a></sup><a href="">"Arroceros regaining its green patches--environmentalists"</a> <i>Philippine Daily Inquirer</i>. Archived from the original on June 13, 2015. Retrieved June 10, 2015.
-                              </li>
-                              <li><sup><a href="">^</a></sup><a href="">"Group starts signature campaign vs building of gym inside Arroceros Forest Park"</a>. <i>GMA News</i>. Retrieved March 3, 2020.
-                              </li>
-                              <li><sup><a href="">^</a></sup>Madarang, Catalina Ricci S. (August 16, 2018). <a href="">"The last breathing space in Manila, Arroceros Forest Park, is under threat"</a>. <i>Interaksyon</i>. Retrieved March 3, 2020.
-                              </li>
-                              <li><sup><a href="">^</a></sup>Talabong, Rambo. <a href="">"Here to stay: Isko Moreno declares Arroceros as 'permanent forest park'"</a>. <i>Rappler</i>. Retrieved March 3, 2020.
-                              </li>
-                              <li><sup><a href="">^</a></sup> <a href="">"ICYMI: The Manila City government has formally opened the newly redeveloped Arroceros Urban Forest Park to the general public | Lungsod ng Maynila"</a>. <i>Lungsod ng Maynila</i>. February 6, 2022. Retrieved October 27, 2022.
-                              </li>
-                              <li><sup><a href="">^</a></sup><sup><a href="">a</a></sup><sup><a href="">b</a></sup><a href="">"Impose rule of law on Arroceros Forest Park"</a>. <i>The Philippine Star</i>. Retrieved June 10, 2015.
-                              </li>
-                          </ol>
-                      </section>
+                       <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, nulla exercitationem tempora inventore ratione ad. Nobis, mollitia? Eum iure asperiores maiores, fuga unde cum voluptatibus ad voluptatem veritatis error vero.</div>
+                  
+                <div>
+                  <img src="Images/4.jpg" alt="">
+                  <p>An overview of pathways inside the forest park.</p>
 
                 </div>
-
-                <div class="col-12" style="border: 1px solid red;"> <h2><a href="#" id="PandP">Parks and Plazas in Metro Manila</a></h2>
-
-                    <div class="table-container">
-                        <button id="showButton" onclick="toggleTable()">Show</button>
-                      
-                        <table border="1" cellspacing="0" cellpadding="1 id="myTable">
-                          <tr>
-                            <td width=200 style="background-color: #bbeb85;"><b>Protected areas</b></td>
-                            <td>
-                              <p>
-                                <a href="#">La Mesa Watershed ReservationLas</a> ·  <a href="#">   Piñas–Parañaque Critical Habitat and Ecotourism Area</a> · 
-                                <a href="#">Ninoy Aquino Parks and Wildlife Center</a> ·  <a href="#"> Quezon Memorial Circle </a> ·  <a href="#"> Rizal Park</a> ·                             
-                              </p>
-                            </td>
-                            <td rowspan="4"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/RizalMonumentInRizalPark.JPG/225px-RizalMonumentInRizalPark.JPG" width=250px">
-                              </td>
-                          </tr>
-                          <tr>
-                            <td style="background-color: #bbeb85;"><b>Urban parks</b></td>
-                            <td>
-                                <p>
-                                    <a href="#">APEC Sculpture Garden</a>·  
-                                    <a href="#"> Ayala Triangle Gardens</a>· 
-                                    <a href="#">Baywalk</a>·  
-                                    <a href="#"> Bernardo Park </a>·  
-                                    <a href="#"> Bonifacio Shrinek</a>·  
-                                    <a href="#">Glorieta Park</a>·  
-                                    <a href="#">Legazpi Active Park</a>·  
-                                    <a href="#">Makati Park and Garden</a>·  
-                                    <a href="#">Makati Poblacion Park</a>·  
-                                    <a href="#">Malabon People's Park</a>·  
-                                    <a href="#">Marikina River Park</a>·  
-                                    <a href="#">Mehan Garden</a>·  
-                                    <a href="#">Muntinlupa Sunken Garden</a>·  
-                                    <a href="#">Navotas Centennial Park</a>·  
-                                    <a href="#">Paco Park</a>·  
-                                    <a href="#">Pinaglabanan Shrine</a>·  
-                                    <a href="#">Salcedo Park</a>·  
-                                    <a href="#">Sucat People's Park</a>·  
-                                    <a href="#">Tandang Sora National Shrine</a>·  
-                                    <a href="#">Valenzuela People's Park</a>·  
-                                    <a href="#">Washington SyCip Park</a>
-                                                               
-                                  </p>
-
-
-                            </td>
-                           
-                          </tr>
-                            <tr>
-                            <td style="background-color: #bbeb85;"><b>Nature parks</b></td>
-                            <td>
-                                <a href="#">Arroceros Forest Park</a>·  
-                                <a href="#"> Balara Filters Park</a>·  
-                                <a href="#">Isla PuloLa Mesa Ecopark</a>·  
-                                <a href="#"> Malabon Zoo</a>·  
-                                <a href="#">Manila Zoo</a>·  
-                                <a href="#">Pasig Rainforest Park</a>·  
-                                <a href="#">University of the Philippines Arboretum</a>
-
-
-                            </td>
-                              
-                          </tr>
-                            <tr>
-                            <td style="background-color: #bbeb85;"><b>Squares and plazas</b></td>
-                            <td>
-                                <a href="#">Liwasang Bonifacio</a>·  
-                                <a href="#">Plaza de Armas</a>·  
-                                <a href="#">Plaza Cervantes</a>·  
-                                <a href="#">Plaza Dilao</a>·  
-                                <a href="#">Plaza de España</a>·  
-                                <a href="#">Plaza Lacson</a>·  
-                                <a href="#">Plaza Mexico</a>·  
-                                <a href="#">Plaza Miranda</a>·  
-                                <a href="#">Plaza Moraga</a>·  
-                                <a href="#">Plaza Moriones (Intramuros)</a>·  
-                                <a href="#">Plaza Moriones (Tondo)</a>·  
-                                <a href="#">Plaza Olivia Salamanca</a>·  
-                                <a href="#">Plaza Rajah Sulayman</a>·  
-                                <a href="#">Plaza de Roma</a>·  
-                                <a href="#">Plaza Rueda</a>·  
-                                <a href="#">Plaza San Lorenzo Ruiz</a>·  
-                                <a href="#">Book Stop Intramuros</a>·  
-                            </td>
-                            
-                          </tr>
-                        </table>
-
+                <div>
+                  <img src="Images/5.jpg" alt="">
+                  <p>A series of exhibits on the fauna and flora in the forest park.</p>
                 </div>
-           
+                <div>
+                  <img src="Images/6.jpg" alt="">
+                  <p>An esplanade along the Pasig River located at one end of the forest park.</p>
+                </div>
+              </div>
+
             </div>
-            <div class="col-12" style="border: 1px solid red;"> 
-                <div class="border">      
-                    <ul>
-                        <li><a href="">Categories:</a></li>
-                        <li><a href="">Parks in Manila |</a></li>
-                        <li><a href="">Ermita |</a></li>
-                        <li><a href="">Tourist attractions in Manila |</a></li>
-                        <li><a href="">1993 establishments in the Philippines |</a></li>
-                        <li><a href="">Pasig River</a></li>
-                    </ul>
-            
-       
-                </div>
+            <div class="col-12" style="border: 1px solid rgba(255, 0, 0, 0);">
+
+              <h2><span class="mw-headline" id="Gallery">Reference</span><span class="mw-editsection"><span
+                    class="mw-editsection-bracket">[</span><a href="#" title="Edit section: History"
+                    id="edit">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+
+              <section class="references">
+
+                <hr>
+                <li><sup><a href="">^</a></sup><sup><a href="">a</a></sup><sup><a href="">b</a></sup><a
+                    href="">"Arroceros forest park should be preserved"</a>. <i>The Philippine Star</i>. Retrieved June
+                  10, 2015.
+                </li>
+                <li><sup><a href="">^</a></sup><sup><a href="">a</a></sup><sup><a href="">b</a></sup><sup><a
+                      href="">c</a></sup>Talabong, Rambo. <a href="">"Isko Moreno: No to building of gym in Arroceros
+                    Forest Park"</a>. <i>Rappler</i>. Retrieved March 3, 2020.
+                </li>
+                <li><sup><a href="">^</a></sup><a href="">"The Arroceros Forest Park: Manila's last lung"</a>. <i>The
+                    Philippine Sta</i>. Retrieved June 10, 2015.
+                </li>
+                <li><sup><a href="">^</a></sup><a href="">"Arroceros regaining its green patches--environmentalists"</a>
+                  <i>Philippine Daily Inquirer</i>. Archived from the original on June 13, 2015. Retrieved June 10,
+                  2015.
+                </li>
+                <li><sup><a href="">^</a></sup><a href="">"Group starts signature campaign vs building of gym inside
+                    Arroceros Forest Park"</a>. <i>GMA News</i>. Retrieved March 3, 2020.
+                </li>
+                <li><sup><a href="">^</a></sup>Madarang, Catalina Ricci S. (August 16, 2018). <a href="">"The last
+                    breathing space in Manila, Arroceros Forest Park, is under threat"</a>. <i>Interaksyon</i>.
+                  Retrieved March 3, 2020.
+                </li>
+                <li><sup><a href="">^</a></sup>Talabong, Rambo. <a href="">"Here to stay: Isko Moreno declares Arroceros
+                    as 'permanent forest park'"</a>. <i>Rappler</i>. Retrieved March 3, 2020.
+                </li>
+                <li><sup><a href="">^</a></sup> <a href="">"ICYMI: The Manila City government has formally opened the
+                    newly redeveloped Arroceros Urban Forest Park to the general public | Lungsod ng Maynila"</a>.
+                  <i>Lungsod ng Maynila</i>. February 6, 2022. Retrieved October 27, 2022.
+                </li>
+                <li><sup><a href="">^</a></sup><sup><a href="">a</a></sup><sup><a href="">b</a></sup><a href="">"Impose
+                    rule of law on Arroceros Forest Park"</a>. <i>The Philippine Star</i>. Retrieved June 10, 2015.
+                </li>
+                </ol>
+              </section>
+
             </div>
-           
+
+            <div class="col-12" style="border: 1px solid rgba(255, 0, 0, 0);">
+              <h2><a href="#" id="PandP">Parks and Plazas in Metro Manila</a></h2>
+
+              <div class="table-container">
+                <button id="showButton" onclick="toggleTable()">Show</button>
+
+                <table border="1" cellspacing="0" cellpadding="1 id=" myTable">
+                  <tr>
+                    <td width=200 style="background-color: #bbeb85;"><b>Protected areas</b></td>
+                    <td>
+                      <p>
+                        <a href="#">La Mesa Watershed ReservationLas</a> · <a href="#"> Piñas–Parañaque Critical Habitat
+                          and Ecotourism Area</a> ·
+                        <a href="#">Ninoy Aquino Parks and Wildlife Center</a> · <a href="#"> Quezon Memorial Circle
+                        </a> · <a href="#"> Rizal Park</a> ·
+                      </p>
+                    </td>
+                    <td rowspan="4"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/RizalMonumentInRizalPark.JPG/225px-RizalMonumentInRizalPark.JPG"
+                        width=250px">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="background-color: #bbeb85;"><b>Urban parks</b></td>
+                    <td>
+                      <p>
+                        <a href="#">APEC Sculpture Garden</a>·
+                        <a href="#"> Ayala Triangle Gardens</a>·
+                        <a href="#">Baywalk</a>·
+                        <a href="#"> Bernardo Park </a>·
+                        <a href="#"> Bonifacio Shrinek</a>·
+                        <a href="#">Glorieta Park</a>·
+                        <a href="#">Legazpi Active Park</a>·
+                        <a href="#">Makati Park and Garden</a>·
+                        <a href="#">Makati Poblacion Park</a>·
+                        <a href="#">Malabon People's Park</a>·
+                        <a href="#">Marikina River Park</a>·
+                        <a href="#">Mehan Garden</a>·
+                        <a href="#">Muntinlupa Sunken Garden</a>·
+                        <a href="#">Navotas Centennial Park</a>·
+                        <a href="#">Paco Park</a>·
+                        <a href="#">Pinaglabanan Shrine</a>·
+                        <a href="#">Salcedo Park</a>·
+                        <a href="#">Sucat People's Park</a>·
+                        <a href="#">Tandang Sora National Shrine</a>·
+                        <a href="#">Valenzuela People's Park</a>·
+                        <a href="#">Washington SyCip Park</a>
+
+                      </p>
+
+
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td style="background-color: #bbeb85;"><b>Nature parks</b></td>
+                    <td>
+                      <a href="#">Arroceros Forest Park</a>·
+                      <a href="#"> Balara Filters Park</a>·
+                      <a href="#">Isla PuloLa Mesa Ecopark</a>·
+                      <a href="#"> Malabon Zoo</a>·
+                      <a href="#">Manila Zoo</a>·
+                      <a href="#">Pasig Rainforest Park</a>·
+                      <a href="#">University of the Philippines Arboretum</a>
+
+
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td style="background-color: #bbeb85;"><b>Squares and plazas</b></td>
+                    <td>
+                      <a href="#">Liwasang Bonifacio</a>·
+                      <a href="#">Plaza de Armas</a>·
+                      <a href="#">Plaza Cervantes</a>·
+                      <a href="#">Plaza Dilao</a>·
+                      <a href="#">Plaza de España</a>·
+                      <a href="#">Plaza Lacson</a>·
+                      <a href="#">Plaza Mexico</a>·
+                      <a href="#">Plaza Miranda</a>·
+                      <a href="#">Plaza Moraga</a>·
+                      <a href="#">Plaza Moriones (Intramuros)</a>·
+                      <a href="#">Plaza Moriones (Tondo)</a>·
+                      <a href="#">Plaza Olivia Salamanca</a>·
+                      <a href="#">Plaza Rajah Sulayman</a>·
+                      <a href="#">Plaza de Roma</a>·
+                      <a href="#">Plaza Rueda</a>·
+                      <a href="#">Plaza San Lorenzo Ruiz</a>·
+                      <a href="#">Book Stop Intramuros</a>·
+                    </td>
+
+                  </tr>
+                </table>
+
+              </div>
+
             </div>
+            <div class="col-12" style="border: 1px solid rgba(255, 0, 0, 0);">
+              <div class="border">
+                <ul>
+                  <li><a href="">Categories:</a></li>
+                  <li><a href="">Parks in Manila |</a></li>
+                  <li><a href="">Ermita |</a></li>
+                  <li><a href="">Tourist attractions in Manila |</a></li>
+                  <li><a href="">1993 establishments in the Philippines |</a></li>
+                  <li><a href="">Pasig River</a></li>
+                </ul>
+
+
+              </div>
+            </div>
+
+          </div>
 
         </div>
 
@@ -353,20 +620,72 @@
         <!-- Main Content end -->
       </div>
     </div>
-    <div class="row">
-      <div class="col-12" style="border: 1px solid red;"> Footer 
-        <!-- Footer Start -->
 
 
-        <!-- Footer End -->
-      </div>
-    </div>
-    
-       
+
 
 
   </div>
 
-</body>   
+  <script>
+    let subMenu = document.getElementById("subMenu")
+
+    function toggleMenu() {
+      subMenu.classList.toggle("open-menu")
+    }
+
+    let subMenuA = document.getElementById("subMenuA")
+
+    function toggleMenuA() {
+      subMenuA.classList.toggle("open-menu-1")
+    }
+  </script>
+
+</body>
+
+<footer>
+
+  <div class="row">
+    <div class="col-12" style="border: 1px solid rgba(255, 0, 0, 0);">
+      <!-- Footer Start -->
+
+      <div class="footer-content">
+        <hr>
+        <p>&copy; This page was last edited on 28 January 2023, at 09:36 (UTC)..</p>
+        
+        <p>Text is available under the <a href="#">Creative Commons Attribution-ShareAlike License 4.0;</a> additional terms may apply. By using this site, you agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="#">Wikimedia Foundation, Inc.,</a> a non-profit organization.</p>
+
+        <div class="footer-list">
+
+          <ul> 
+            <li>Privacy policy &nbsp; &nbsp;</li> 
+            <li>About Wikipedia &nbsp; &nbsp;</li> 
+            <li>Disclaimers &nbsp; &nbsp;</li> 
+            <li>Contact Wikipedia &nbsp; &nbsp;</li> 
+            <li>Code of Conduct &nbsp; &nbsp;</li> 
+            <li>Mobile view &nbsp; &nbsp;</li> 
+            <li>Developers&nbsp; &nbsp;</li> 
+            <li>Statistics&nbsp; &nbsp;</li> 
+            <li>Cookie statement&nbsp; &nbsp;</li> 
+          </ul>
+
+
+        </div>
+       
+
+
+      </div>
+  
+
+
+
+      <!-- Footer End -->
+    </div>
+  </div>
+
+
+</footer>
+
+
 
 </html>
